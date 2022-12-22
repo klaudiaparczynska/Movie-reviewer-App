@@ -1,0 +1,27 @@
+<template>
+    <lightning-quick-action-panel header="Hide review">
+        <template if:true={filteredReviews}>
+            <p>Do you want to continue hiding review?</p>
+    
+            <div slot="footer">
+                <lightning-button variant="neutral"
+                 label="No" onclick={closeAction}>
+                </lightning-button>
+                <lightning-button variant="brand"
+                 label="Yes" onclick={hideReview} 
+                 class="slds-m-left_x-small">
+                </lightning-button>
+            </div>
+        </template>
+        <template if:false={filteredReviews}>
+            <p>Review is already hidden.</p>
+
+            <div slot="footer">
+                <lightning-button variant="neutral"
+                 label="Cancel" onclick={closeAction}>
+                </lightning-button>
+            </div>
+        </template>
+        
+    </lightning-quick-action-panel>
+</template>

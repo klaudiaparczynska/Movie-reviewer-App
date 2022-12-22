@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Custom Metadata Type that records&apos; are keywords triggering masking of movie review</description>
+    <label>Movie Review Keyword</label>
+    <pluralLabel>Movie Review Keywords</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

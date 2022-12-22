@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Review_Permission</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Permission.May_Change_Review  = FALSE  &amp;&amp; ISCHANGED(Rating__c) &amp;&amp; NOT(ISNEW())</errorConditionFormula>
+    <errorDisplayField>Rating__c</errorDisplayField>
+    <errorMessage>You dont have permissions to change this field.</errorMessage>
+</ValidationRule>

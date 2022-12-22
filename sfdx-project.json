@@ -1,0 +1,15 @@
+{
+  "packageDirectories": [
+    {
+      "path": "reviewer",
+      "default": true
+    },
+    {
+      "path": "datamodel"
+    }
+  ],
+  "name": "reviewer",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "55.0"
+}
